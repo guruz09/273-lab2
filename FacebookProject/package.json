@@ -1,0 +1,15 @@
+{
+  "name": "FacebookProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.21.2",
+    "ejs": "*",
+    "client-sessions": "^0.7.0",
+    "mysql": "2.9.0",
+    "express-session": "^1.11.3"
+  }
+}

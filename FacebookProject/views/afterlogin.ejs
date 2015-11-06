@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html ng-app="MainAngularModule">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="/stylesheets/custom.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='/stylesheets/bootstrap/css/bootstrap.css' />
+    <link rel='stylesheet' type='text/css' href='/stylesheets/bootstrap/css/bootstrap-theme.min.css' />
+    <link rel='stylesheet' type='text/css' href='/stylesheets/bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="../lib/jquery/jquery-2.1.3.min.js"></script>
+    
+ 	<script src="../lib/angular/angular.js"></script>
+    <script src="../lib/vendor/angular-route.js"></script> 
+ 	
+ 	<script src="../lib/bootstrap/ui-bootstrap-0.12.0.js"></script>
+	<script src="../lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript"
+	src="../lib/angular-bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+	
+	 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     
+ 	 		
+ 	<script src="../MainAngularModule.js"></script> 
+ 	<script src="../Controllers/MainPageController.js"></script>
+ 	<script src="../Controllers/HomePageController.js"></script>   
+ 	<script src="../Controllers/afterLoginController.js"></script>
+ 	<script src="../Controllers/homeService.js"></script> 
+ 	<script src="../Controllers/loginService.js"></script> 
+ 	<script src="../Controllers/signupService.js"></script>
+ 	<link href="./stylesheets/styles.css" rel="stylesheet">
+ 	
+  </head>
+  <body>
+<div class="wrapper" ng-controller="HomePageController" ng-init=loadPageData()>
+    <div class="box">
+        <div class="row row-offcanvas row-offcanvas-left">   
+           
+            <!-- main right col -->
+            <div class="column col-sm-12 col-xs-12" id="main">
+               
+                <!-- top nav -->
+              	<div class="navbar navbar-blue navbar-static-top">  
+                    <div class="navbar-header">
+                    
+                      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle</span>
+                        <span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+                      </button>
+                      
+                      <a href="/" class="navbar-brand logo">mf</a>
+                  	</div>
+                  	<nav class="collapse navbar-collapse" role="navigation">
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group input-group-sm" style="max-width:360px;">
+                          <input type="text" class="typeahead form-control" placeholder="Search" name="srch-term" id="srch-term" style="width:360px;">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                          </div>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav">
+                      <li>
+                        <a href="" style="padding-left:300px;color:white;" class="navbar-text-font" ng-click="loadAboutPage()"><i class="glyphicon" ng-model="displayname"></i> <b>{{displayname}}</b></a>
+                      </li> 
+                      <li>
+                        <a href="#"  ng-click="loadPageData()"><i class="glyphicon"></i> <b>Home</b></a>
+                      </li>
+                      <li><a href="#"><span style="color:white;" class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                      </li>
+        			  <li><a href="#"><span style="color:white;" class="glyphicon glyphicon-comment" aria-hidden="false"></span></a>
+        			  </li>
+        			  <li><a href="#"><span style="color:white;" class="glyphicon glyphicon-globe" aria-hidden="false"></span></a>
+        			  </li>
+                      <li>
+                      	<div class="dropdown" style="padding-top:7px;">
+  					  	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background: #3b5998; outline:none; box-shadow:none;">
+    	              	<span class="caret"></span>
+  		              	</button>
+  		     	          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    					<li><a href="#">Create Group</a></li>
+	    					<li role="separator" class="divider"></li>
+	    					<li><a href="#">Settings</a></li>
+	    					<li><a href="">Log Out</a></li>
+	   					    <li role="separator" class="divider"></li>
+	    					<li><a href="#">Help</a></li>
+	  					</ul>
+						</div>
+						</li>
+                    </ul>
+                    </ul>
+                  	</nav>
+                </div>
+               
+                <!-- /top nav -->
+                                
+                    <div class="full col-sm-12">
+                      
+                        <!-- content -->                      
+                      	<div class="row">
+                        
+                         <div class="col-sm-2">
+                         <ul>
+                         
+                                <div class="panel-body">
+                                <p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="20px" height="20px"><a href="#">{{displayname}}</a></p>
+                               
+                                
+                                <p><span  class="glyphicon glyphicon-edit" aria-hidden="true"><a href="#">Edit Profile</a></p>
+                                
+                                <p style="margin-top:30px"><a href="#" style="margin-top:30px">GROUPS</a></p>
+                                <ul>
+                                <li class="list-unstyled" style="margin-left:-35px" ng-repeat="group in groups.groupsList"><a href="" ng-click="groupload(group)">{{group}}</a></li>
+                                </ul>
+                                <ul>
+                                <li class="list-unstyled" style="margin-left:-35px">Create Group</li>
+                                </ul>
+                                </div>
+   
+                         </ul>
+                         </div> 
+                         <!-- main col left --> 
+							
+							                         <div class="col-sm-6">
+                           
+                              
+                              <div class="panel panel-default">
+                                <div class="container">
+   								<ul class="nav navbar-nav" style=" color: #9197a3; font-size: 14px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+   								<li style="padding-right:30px; border-right: 1px solid #ccc;"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"> Update Status</span></a></li>
+        						<li style="padding-right:40px; padding-left:20px; border-right: 1px solid #ccc;"><a href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"> Add Photos</span></a></li>
+        						<li style="padding-left:20px;"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> Write Note</span></a></li>
+   								</ul>
+      							</div>
+                                <div class="panel-body">
+                                  <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
+                                  <div class="clearfix"></div>
+                                   <form class="form-horizontal" role="form">
+                                     <div class="form-group" style="padding:14px;">
+                                      <textarea class="form-control" placeholder="Update your status" ng-model="status"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary pull-right" type="button" ng-click="updatestatus()">Post</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+                                  </form>
+                                </div>
+                                </div>
+                                
+                                <div ng-repeat="feed in news">
+                                	<div class="panel panel-default">
+                                		<div class="container">
+                                			<ul class="nav navbar-nav" style=" color: #9197a3; font-size: 14px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+                                			<div class="panel-body">
+                                				<p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px"><span style="margin-left:10px;">{{feed.name}}</span></p>
+                                				<hr width="565px" style="margin-left:-25px">
+                                				<p>{{feed.post}}</p>
+                                				<hr width="565px" style="margin-left:-25px">
+                                				<div style="padding-top:10px; padding-left:20px;">
+      												<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style=" color: #9197a3; font-size: 12px; padding-right:20px;"></span>
+      												<span class="glyphicon glyphicon-comment" aria-hidden="true" style=" color: #9197a3; font-size: 12px; padding-right:20px;"></span>
+      												<span class="glyphicon glyphicon-share-alt" aria-hidden="true" style=" color: #9197a3; font-size: 12px;"></span>
+      											</div>    
+                                			</div>
+                                			</ul>
+                                		</div>
+                                	</div>                          
+                                </div>
+                                
+                                </div>
+                                		
+                           
+                          <!-- main col right -->
+                          <div class="col-sm-3"  style="border-left: 1px solid #ccc;min-height:650px;">
+                               
+                                <div class="panel panel-default">
+                                <div class="container">
+                                <p style="margin-top:30px"><a href="#" style="margin-top:30px">CHATS</a></p>
+                                <hr width="250px" style="margin-left:-10px">
+                                <div class="col-sm-2">
+                                <ul>
+                                <li class="list-unstyled" style="margin-left:-35px">Freind1</li>
+                                <li class="list-unstyled" style="margin-left:-35px">Freind2</li>
+                                <li class="list-unstyled" style="margin-left:-35px">Freind3</li>
+                                </ul>
+                                </div>
+                                <div class="col-sm-1">
+                                <img src="../greendot.png" alt="Green Dot" style="width: 10px;height: 10px;">
+                                </div>
+                                </div>
+                                </div>
+                               
+                               
+                          </div>
+                          
+                        </div><!--/row-->
+                      </body>
+                      </html>
+        

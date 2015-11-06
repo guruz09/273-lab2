@@ -1,0 +1,42 @@
+                              <div class="col-sm-6" ng-init="cntctInfoPageInit()">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                               <div class="container">
+   								<ul class="nav navbar-nav" style=" color: #9197a3; font-size: 14px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+   								<li style="padding-right:30px; padding-left:30px; border-right: 1px solid #ccc;"><a href="#">Timeline</a></li>
+   								<li style="padding-right:30px; padding-left:30px; border-right: 1px solid #ccc;"><a href="#">About</a></li>
+   								<li style="padding-right:30px; padding-left:30px; border-right: 1px solid #ccc;"><a href="#">Friends</a></li>
+   								<li style="padding-right:47px; padding-left:30px;"><a href="#">Photos</a></li>
+   								</ul>
+   								</div>
+                                </div>
+                               	<div class="panel-body">
+                               	<h4><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">About</h4>
+	                                  <hr width="575px" style="margin-left:-15px">
+	                                 
+	                                  <div class="col-sm-4">
+	                                  <ul>
+                                		<li class="list-unstyled" style="margin-left:-35px;margin-top:20px"><a href="" ng-click="overviewPageInit()">Overview</a></li>
+                                		<li class="list-unstyled" style="margin-left:-35px;margin-top:20px"><a href="" ng-click="loadWorkEdu()">Work and Education</a></li>
+                                		<li class="list-unstyled" style="margin-left:-35px;margin-top:20px"><a href="" ng-click="loadContactInfo()">Contact Info</a></li>
+                                		<li class="list-unstyled" style="margin-left:-35px;margin-top:20px"><a href="" ng-click="loadLifeEvents()">Life Events</a></li>
+                                		<li class="list-unstyled" style="margin-left:-35px;margin-top:20px"><a href="" ng-click="loadInterests()">Interests</a></li>
+                                	  </ul>
+	                                  </div>
+	                                  <div class="col-sm-8" style="border-left: 1px solid #ccc;min-height:650px;">
+	                                  <div class="container">
+	                                  <p>Contact Information</p>
+	                                  <hr width="375px" style="margin-left:-28px">
+	                                  <div ng-repeat="over in cntctInfo" ng-show="displaycntctInfo">
+	                                   
+	                                   <ul>
+                                		<li class="list-unstyled" style="margin-left:-35px">{{over|split:";":0}}
+                                		<hr width="373px" style="margin-left:-28px">
+                                		</li>
+                                		</ul>
+                                		</div>
+	                                   </div>
+	                                  </div>
+	                                  </div>
+                              </div>
+                           </div>

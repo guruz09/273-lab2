@@ -1,0 +1,405 @@
+body {
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-default {
+    background-color: #4c66a4;
+    border-bottom: none;
+}
+
+.navbar-form label {
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.navbar-form .input-sm {
+    border-radius: 0;
+}
+
+legend a {
+    color: #141823;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.login-btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px #8a8a8a;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    background: #5b74a8;
+    line-height: 21px;
+    font-weight: bold;
+    padding: 3px 6px 3px 6px;
+    border: solid #29447e 1px;
+    text-decoration: none;
+}
+
+    .login-btn:hover {
+        background: #5b74a8;
+        text-decoration: none;
+    }
+
+.signup-btn {
+    background: #79bc64;
+    background-image: -webkit-linear-gradient(top, #79bc64, #578843);
+    background-image: -moz-linear-gradient(top, #79bc64, #578843);
+    background-image: -ms-linear-gradient(top, #79bc64, #578843);
+    background-image: -o-linear-gradient(top, #79bc64, #578843);
+    background-image: linear-gradient(to bottom, #79bc64, #578843);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    text-shadow: 0px 1px 0px #898a88;
+    -webkit-box-shadow: 0px 0px 0px #a4e388;
+    -moz-box-shadow: 0px 0px 0px #a4e388;
+    box-shadow: 0px 0px 0px #a4e388;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #3b6e22 1px;
+    text-decoration: none;
+}
+
+    .signup-btn:hover {
+        background: #79bc64;
+        background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
+        background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
+        background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
+        background-image: -o-linear-gradient(top, #79bc64, #5e7056);
+        background-image: linear-gradient(to bottom, #79bc64, #5e7056);
+        text-decoration: none;
+    }
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form .form-control {
+    margin-bottom: 10px;
+}
+
+@media (min-width:768px) {
+    #wrap {
+        margin-bottom: 89px;
+    }
+
+    .navbar-form .lt-left {
+        float: left !important;
+    }
+
+    .navbar-form .lt-right {
+        float: right !important;
+    }
+
+    .navbar-form .checkbox {
+        display: block;
+    }
+
+    .navbar-form input[type="password"] {
+        margin-left: 3px;
+    }
+
+    .navbar-form .login-btn {
+        margin-left: 10px;
+        margin-top: 24px;
+    }
+
+    #home {
+        margin-top: 50px;
+    }
+
+        #home .slogan {
+            color: #0e385f;
+            line-height: 29px;
+            font-weight: bold;
+        }
+
+    .navbar-brand {
+        padding: 35px 15px;
+    }
+}
+
+#blueBar {
+    background-color: #3B5998;
+    height: 80px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.html7magic {
+    color: #fff;
+    font-weight: normal;
+    padding-left: 1px;
+}
+
+.textarea, .inputtext, .inputpassword {
+    border: 1px solid #bdc7d8;
+    margin: 0;
+    padding: 3px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.menu_login_container,
+.inputtext, .menu_login_container .inputpassword {
+    border-color: #1d2a5b;
+    margin: 0;
+    width: 142px;
+    height: 23px;
+}
+
+.inputtext, .inputpassword {
+    padding-bottom: 4px;
+}
+
+.input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+
+.uiInputLabel, .uiInputLabelLabel {
+    display: inline-block;
+    margin-left: 17px;
+    vertical-align: baseline;
+    font-size: 12px;
+}
+
+.menu_login_container .login_form_label_field {
+    padding-top: 4px;
+}
+
+.greyLabel {
+    color: #9daccb;
+    font-weight: normal;
+}
+
+.uiInputLabel {
+    position: relative;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+td.label {
+    text-align: left;
+}
+
+.mbs {
+    margin-bottom: 5px;
+}
+
+.mtm {
+    margin-top: 10px;
+}
+
+._58mr {
+    color: #141823;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+._5k_4 {
+    display: inline-block;
+    line-height: 1.34;
+}
+
+._5k_5 {
+    position: relative;
+}
+
+._58mq select {
+    font-size: 13px;
+    height: 30px;
+    padding: 5px;
+}
+
+._58mt {
+    color: #141823;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+}
+
+._5dbb {
+    position: relative;
+    line-height: 1.34;
+    font-size: 12px;
+}
+
+._58mu, ._58mv {
+    /*width: 399px;*/
+    line-height: 1.34;
+    text-align: left;
+    color: #777;
+    font-size: 11px;
+    width: 316px;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.mvm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
+._3ma {
+    font-family: 'Freight Sans Bold', 'Helvetica Neue', 'Segoe UI', 'Malgun Gothic', Meiryo, 'Microsoft JhengHei', helvetica, arial, sans-serif !important;
+    font-weight: bold !important;
+    text-rendering: optimizelegibility;
+}
+
+._58mi {
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+}
+
+._6v {
+    font-weight: bold;
+}
+
+._6o {
+    font-size: 12px;
+    line-height: 126%;
+}
+
+
+._6wl {
+    background: -webkit-linear-gradient(#67ae55, #578843);
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+._6wk {
+    padding: 20px 30px;
+}
+
+._6j {
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+button {
+    margin: 0;
+    box-sizing: border-box;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    font: normal normal normal normal 13.3333330154419px/normal Arial;
+    -webkit-writing-mode: horizontal-tb;
+    -webkit-appearance: button;
+}
+
+.mlm {
+    margin-left: 10px;
+}
+
+._58ms {
+    font-size: 11px;
+    max-width: 150px;
+}
+
+._58ms {
+    display: inline-block;
+    max-width: 140px;
+    vertical-align: middle;
+}
+
+a {
+    color: #3b5998;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+._58mk {
+    border-top: 1px solid #a0a9c0;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+    line-height: 1.34;
+}
+
+.bannerHeight {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    zoom: 1;
+    line-height: 1.34;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.alwaysFree {
+    color: #141823;
+    font-size: 19px;
+    font-weight: normal;
+    display: block;
+    zoom: 1;
+    line-height: 1.34;
+    font-family: helvetica, arial, sans-serif;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.facebookText{
+        font-family: helvetica, arial, sans-serif;
+            line-height: 1.34;
+            text-align: left;
+                width: 170px;
+    height: 34px;
+    background-position: 0 -481px;
+    margin-top: 17px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-style: italic;
+        font-size: 14px;
+            font-weight: bold;
+                zoom: 1;
+}

@@ -1,0 +1,44 @@
+                         <div class="col-sm-6">
+                           
+                              
+                              <div class="panel panel-default">
+                                <div class="container">
+   								<ul class="nav navbar-nav" style=" color: #9197a3; font-size: 14px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+   								<li style="padding-right:30px; border-right: 1px solid #ccc;"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"> Update Status</span></a></li>
+        						<li style="padding-right:40px; padding-left:20px; border-right: 1px solid #ccc;"><a href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"> Add Photos</span></a></li>
+        						<li style="padding-left:20px;"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> Write Note</span></a></li>
+   								</ul>
+      							</div>
+                                <div class="panel-body">
+                                  <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
+                                  <div class="clearfix"></div>
+                                   <form class="form-horizontal" role="form">
+                                     <div class="form-group" style="padding:14px;">
+                                      <textarea class="form-control" placeholder="Update your status"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary pull-right" type="button">Post</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+                                  </form>
+                                </div>
+                                </div>
+                                
+                                <div ng-repeat="feeds in news.newsList">
+                                <div class="panel panel-default">
+                                <div class="container">
+                                <ul class="nav navbar-nav" style=" color: #9197a3; font-size: 14px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+                                <div class="panel-body">
+                                <p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px"><span style="margin-left:10px;">{{feeds|split:":":0}}</span></p>
+                                <hr width="565px" style="margin-left:-25px">
+                                <p>{{feeds|split:":":1}}</p>
+                                <hr width="565px" style="margin-left:-25px">
+                                <div style="padding-top:10px; padding-left:20px;">
+      							<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style=" color: #9197a3; font-size: 12px; padding-right:20px;"></span>
+      							<span class="glyphicon glyphicon-comment" aria-hidden="true" style=" color: #9197a3; font-size: 12px; padding-right:20px;"></span>
+      							<span class="glyphicon glyphicon-share-alt" aria-hidden="true" style=" color: #9197a3; font-size: 12px;"></span>
+      							</div>    
+                                </div>
+                                </ul>
+                                </div>
+                                </div>
+                                </div>
+                                
+                                </div>

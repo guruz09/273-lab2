@@ -1,0 +1,54 @@
+ <div class="col-sm-6" ng-init="groupPageInit()">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                               <div class="container">
+   								<h4><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">GroupName<h4>
+                               	<div class="input-group input-group-sm" style="max-width:360px;">
+   								</div>
+                                </div>
+                                </div>
+                               	<div class="panel-body">
+                              
+                               	<div class="input-group input-group-sm" style="max-width:360px;">
+                          		
+                          		<input type="text" class="typeahead form-control" placeholder="Search" name="srch-term" ng-model="searchText" style="width:350px;">
+                          		<div class="input-group-btn">
+                           		 	<button class="btn btn-default" type="submit" ng-click="friendsSearch()"><i class="glyphicon glyphicon-search"></i></button>
+                         		</div>
+                        		</div>
+                        		
+                               	
+	                                  <hr width="575px" style="margin-left:-15px">
+	                                  <div>
+	                                  <p><b>Members</b></p>
+	                                  <hr width="575px" style="margin-left:-15px">
+	                                  <div  ng-repeat="mem1 in grpMem1.memList track by $index" ng-hide="newgroupmember">
+	                                  <ul>
+	                                  <li class="list-unstyled" style="margin-left:-10px;margin-top:20px"><p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">{{mem1}}</p><button class="btn btn-default btn-sm" style="margin-right:20px;margin-left:400px;">Member</button></li>
+	                                  <hr width="475px" style="margin-left:-15px">
+	                                  </ul>
+	                                  </div>
+	                                  </div>
+	                                  
+	                                  <div  ng-repeat="mem in grpMem.memList track by $index" ng-hide="existinggroupmember">
+	                                  <div>
+	                                  <ul>
+	                                  <li class="list-unstyled" style="margin-left:-10px;margin-top:20px"><p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">{{mem}}</p><button class="btn btn-danger btn-sm" style="margin-right:20px;margin-left:400px;" ng-click="deleteGroupMember(mem)">Delete</button></li>
+	                                  <hr width="475px" style="margin-left:-15px">
+	                                  </ul>
+	                                  </div>
+	                                  </div>
+	                                  
+	                                  <div  ng-repeat="mem in friendsNamesSorted" ng-hide="friendsName">
+	                                  <div>
+	                                  <ul>
+	                                  <li class="list-unstyled" style="margin-left:-10px;margin-top:20px"><p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">{{mem}}</p><button class="btn btn-info btn-sm" style="margin-right:20px;margin-left:400px;" ng-click="addGroupMember(mem)">Add</button></li>
+	                                  <hr width="475px" style="margin-left:-15px">
+	                                  </ul>
+	                                  </div>
+	                                  </div>
+	                                  
+	                                 </div>
+	                                 
+	                                 </div>
+	                                 </div>
